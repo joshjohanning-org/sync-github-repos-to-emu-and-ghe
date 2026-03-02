@@ -1,0 +1,31 @@
+repos:
+  - source: joshjohanning-org/ghas-demo
+    target: joshjohanning-emu/ghas-demo
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: joshjohanning-org/.github-private
+    target: joshjohanning-emu/.github-private
+    visibility: private # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: joshjohanning-org/juice-shop-ghas-workshop
+    target: joshjohanning-emu/juice-shop-ghas-workshop
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: github-samples/securing-your-code
+    target: joshjohanning-emu/securing-your-code-workshop
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: joshjohanning-org/reusable-workflows
+    target: joshjohanning-emu/reusable-workflows
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: joshjohanning-org/required-workflows
+    target: joshjohanning-emu/required-workflows
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)

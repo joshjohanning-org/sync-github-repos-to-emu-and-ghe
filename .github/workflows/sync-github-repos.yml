@@ -115,7 +115,7 @@ jobs:
           app-id: ${{ vars.GHES_APP_ID }}
           private-key: ${{ secrets.GHES_APP_PRIVATE_KEY }}
           owner: joshjohanning-org
-          github-api-url: hhttps://joshjohanning-81lrr1.ghe-test.com/api/v3
+          github-api-url: https://joshjohanning-81lrr1.ghe-test.com/api/v3
       - name: Bulk GitHub Repository Sync
         uses: joshjohanning/bulk-github-repo-sync-action@v1
         with:

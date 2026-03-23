@@ -32,7 +32,7 @@ jobs:
           private-key: ${{ secrets.EMU_APP_PRIVATE_KEY }}
           owner: joshjohanning-emu
       - name: Bulk GitHub Repository Sync
-        uses: joshjohanning/bulk-github-repo-sync-action@v1
+        uses: joshjohanning/bulk-github-repo-sync-action@v2
         with:
           repo-list-file: repos-emu.yml
           source-github-token: ${{ steps.source-app-token.outputs.token }}
@@ -63,7 +63,7 @@ jobs:
           owner: joshjohanning-org
           github-api-url: https://api.customersuccess.ghe.com
       - name: Bulk GitHub Repository Sync
-        uses: joshjohanning/bulk-github-repo-sync-action@v1
+        uses: joshjohanning/bulk-github-repo-sync-action@v2
         with:
           repo-list-file: repos-ghe.yml
           source-github-token: ${{ steps.source-app-token.outputs.token }}
@@ -86,7 +86,7 @@ jobs:
           private-key: ${{ secrets.GHEC_APP_PRIVATE_KEY }}
           owner: joshjohanning-org
       - name: Bulk GitHub Repository Sync
-        uses: joshjohanning/bulk-github-repo-sync-action@v1
+        uses: joshjohanning/bulk-github-repo-sync-action@v2
         with:
           repo-list-file: repos-ghec.yml
           source-github-token: ${{ steps.target-app-token.outputs.token }}
@@ -117,7 +117,7 @@ jobs:
           owner: joshjohanning-org
           github-api-url: https://joshjohanning-81lrr1.ghe-test.com/api/v3
       - name: Bulk GitHub Repository Sync
-        uses: joshjohanning/bulk-github-repo-sync-action@v1
+        uses: joshjohanning/bulk-github-repo-sync-action@v2
         with:
           repo-list-file: repos-ghes.yml
           source-github-token: ${{ steps.source-app-token.outputs.token }}

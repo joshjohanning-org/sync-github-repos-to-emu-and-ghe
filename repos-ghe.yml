@@ -4,6 +4,11 @@ repos:
     visibility: internal # Optional: private, public, or internal (defaults to private)
     disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
     archive-after-sync: false # Optional: archive repo after sync (defaults to false)
+  - source: joshjohanning-org/.github
+    target: joshjohanning-org/.github
+    visibility: internal # Optional: private, public, or internal (defaults to private)
+    disable-github-actions: false # Optional: disable Actions on target repo (defaults to true)
+    archive-after-sync: false # Optional: archive repo after sync (defaults to false)
   - source: joshjohanning-org/.github-private
     target: joshjohanning-org/.github-private
     visibility: private # Optional: private, public, or internal (defaults to private)

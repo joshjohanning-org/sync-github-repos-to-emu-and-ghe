@@ -5,6 +5,8 @@ on:
     - cron: '15 0 * * 1'
   workflow_dispatch:
   push:
+    branches:
+      - main
 
 permissions:
   contents: read
